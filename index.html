@@ -51,6 +51,7 @@
   .sig{margin-top:44px;padding-top:22px;border-top:1px solid var(--rule);color:var(--muted)}
   .sig b{color:var(--ink);font-weight:600;display:block}
   .print-only{display:none}
+  figure.print-only{display:none}
   @media print{
     @page{size:A4;margin:16mm 18mm}
     body{background:#fff;font-size:10.5pt;line-height:1.45}
@@ -59,7 +60,7 @@
     .lead{font-size:12.5pt}
     figure{margin:10pt 0}
     .land img,.land .ph{aspect-ratio:21/9} .sq{float:right;width:48mm;margin:0 0 6pt 10pt} .sq img,.sq .ph{aspect-ratio:1/1;max-width:none;margin:0} .tab{float:right;width:48mm;margin:0 0 6pt 10pt} .tab img,.tab .ph{aspect-ratio:4/5;max-width:none;margin:0} section::after{content:'';display:block;clear:both}
-    .btn{display:none} .print-only{display:block}
+    .btn{display:none} .print-only{display:block} figure.print-only{display:block} figure.screen-only{display:none}
     figure,.faq p,.quote,.incl,.keep{break-inside:avoid} h2,h3{break-after:avoid}
     .hero img,.hero .ph{aspect-ratio:16/9;object-position:50% 20%}
     a{color:inherit;text-decoration:none}
@@ -93,13 +94,15 @@
   <h2>The night</h2>
 
   <h3>First, the class</h3>
+  <figure class="sq print-only"><img style="object-position:50% 15%" src="img/04-embrace.jpg" alt="Two people in the tango embrace" onerror="this.outerHTML='<div class=ph>04-embrace.jpg · the embrace, or feet walking (optional)</div>'"></figure>
   <p>A car with a driver picks you up at your hotel and takes you to a dance studio, where the night begins with an hour of private class with me. We go through the embrace, the walk and the music, enough to get the feeling of tango in your own body. The class adapts to you, whether or not you have danced before.</p>
-  <figure class="sq"><img style="object-position:50% 15%" src="img/04-embrace.jpg" alt="Two people in the tango embrace" onerror="this.outerHTML='<div class=ph>04-embrace.jpg · the embrace, or feet walking (optional)</div>'"></figure>
+  <figure class="sq screen-only"><img style="object-position:50% 15%" src="img/04-embrace.jpg" alt="Two people in the tango embrace" onerror="this.outerHTML='<div class=ph>04-embrace.jpg · the embrace, or feet walking (optional)</div>'"></figure>
 
   <h3>Then, the milonga</h3>
+  <figure class="tab print-only"><img src="img/03-table.jpg" alt="The reserved table at the milonga" onerror="this.outerHTML='<div class=ph>03-table.jpg · the reserved table</div>'"></figure>
   <p>After the class we go together to a milonga, on a night with a live orchestra. We have a table reserved, with a view of the orchestra and the dance floor. I explain what is happening around us: how people invite each other, when to dance and when not, what to watch from your table. Through the night I tell you the history of tango: where it was born, how it conquered Buenos Aires and Europe, the golden age of tango.</p>
   <p>You can try the floor if you feel like it, or simply listen to the orchestra, watch the dancers and enjoy the night.</p>
-  <figure class="tab"><img src="img/03-table.jpg" alt="The reserved table at the milonga" onerror="this.outerHTML='<div class=ph>03-table.jpg · the reserved table</div>'"></figure>
+  <figure class="tab screen-only"><img src="img/03-table.jpg" alt="The reserved table at the milonga" onerror="this.outerHTML='<div class=ph>03-table.jpg · the reserved table</div>'"></figure>
 
   <h3>At the end, back to your hotel</h3>
   <p>We leave after the orchestra and the car takes you back to your door. Four to five hours in all: back around 1am, on Sundays earlier.</p>
